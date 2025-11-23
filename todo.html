@@ -6,16 +6,21 @@
 <body>
     <h1>Add To-Do Item</h1>
 
-    <label>Item ID:</label><br>
-<input type="number" name="itemId" required><br><br>
+    <form action="/submittodoitem" method="POST">
 
-<label>Item Name:</label><br>
-<input type="text" name="itemName" required><br><br>
+        <label>Item ID:</label><br>
+        <input type="number" name="itemId" required><br><br>
 
-<label>Item Description:</label><br>
-<textarea name="itemDescription" required></textarea><br><br>
+        <label>Item UUID:</label><br>
+        <input type="text" name="itemUUID" required><br><br>
 
-<button type="submit">Submit To-Do</button>
+        <label>Item Name:</label><br>
+        <input type="text" name="itemName" required><br><br>
+
+        <label>Item Description:</label><br>
+        <textarea name="itemDescription" required></textarea><br><br>
+
+        <button type="submit">Submit To-Do</button>
     </form>
 </body>
 </html>
